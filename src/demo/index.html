@@ -10,9 +10,10 @@
       import CountDown from "../../dist/index.es.js";
 
       const countDown = new CountDown({
-        time: 0,
+        time: 120 * 1000,
         onChange: (timeData, formatted) => {
-          document.getElementById("time").innerText = formatted;
+          document.getElementById("time").innerText =
+            timeData.totalSeconds + "秒";
         },
         autoStart: false,
         millisecond: true,

@@ -32,8 +32,6 @@ class CountDown {
         this.onChange = onChange
         this.onFinish = onFinish
 
-        this.setRemain(this.remain)
-
         if (this.autoStart) {
             this.start()
         }

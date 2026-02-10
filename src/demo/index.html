@@ -10,7 +10,7 @@
       import CountDown from "../../dist/index.es.js";
 
       const countDown = new CountDown({
-        time: 10 * 1000,
+        time: 0,
         onChange: (timeData, formatted) => {
           document.getElementById("time").innerText = formatted;
         },
@@ -19,6 +19,7 @@
         format: "DD天HH小时mm分钟ss秒SSS毫秒",
         onFinish: () => {
           document.getElementById("time").innerText = "时间到";
+          console.log("倒计时结束");
         },
       });
       document.getElementById("start").addEventListener("click", () => {

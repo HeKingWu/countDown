@@ -15,6 +15,7 @@ export function parseTimeData(ms: number): Readonly<TimeData> {
     const days = Math.floor(totalHours / 24)
 
     return Object.freeze({
+        totalSeconds,
         days,
         hours,
         minutes,

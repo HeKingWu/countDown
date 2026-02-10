@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import CountDown from "../../dist/index.es.js";
+
+      const countDown = new CountDown({
+        time: new Date(2026, 1, 20, 18, 0, 0).getTime() - Date.now(),
+        onChange: (timeData, formatted) => {
+          document.getElementById("time").innerText = formatted;
+        },
+        millisecond: true,
+        format: "DD天HH小时mm分钟ss秒SSS毫秒",
+        onFinish: () => {},
+      });
+    </script>
+    <div id="time"></div>
+  </body>
+</html>

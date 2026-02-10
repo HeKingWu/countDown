@@ -1,0 +1,36 @@
+{
+  "name": "@heking.wu/countdown",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [
+    "倒计时",
+    "计时器",
+    "javascript"
+  ],
+  "author": "HeKing",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "@heking.wu/countdown": "^1.0.0"
+  }
+}

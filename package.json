@@ -20,9 +20,11 @@
     "release": "pnpm build && pnpm version patch && pnpm publish --access public"
   },
   "keywords": [
+    "countdown",
+    "timer",
     "倒计时",
-    "计时器",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
   "author": "HeKing",
   "license": "ISC",

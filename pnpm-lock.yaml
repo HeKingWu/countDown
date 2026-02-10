@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@heking.wu/countdown':
-        specifier: ^1.0.0
-        version: 1.0.0
     devDependencies:
       vite:
         specifier: ^7.3.1
@@ -193,9 +189,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@heking.wu/countdown@1.0.0':
-    resolution: {integrity: sha512-89S9MY6dY44FMIl6BCPDZDB+zdVjXCUh6BBgrSJFhuoNwAMvVgm3/LZaZLhibFSlimxI13I4xz4xXpiT+137lA==}
 
   '@isaacs/balanced-match@4.0.1':
     resolution: {integrity: sha512-yzMTt9lEb8Gv7zRioUilSglI0c0smZ9k5D65677DLWLtWJaXIS3CqcGyUFByYKlnUj6TkjLVs54fBl6+TiGQDQ==}
@@ -839,8 +832,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.3':
     optional: true
-
-  '@heking.wu/countdown@1.0.0': {}
 
   '@isaacs/balanced-match@4.0.1': {}
 
